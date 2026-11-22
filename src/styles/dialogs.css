@@ -125,3 +125,33 @@
 @media (max-width: 380px) {
   .verbo-dialog__details { grid-template-columns: 1fr; gap: .7rem; }
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  .verbo-dialog[open] {
+    animation: verbo-dialog-enter 180ms cubic-bezier(.2, .75, .25, 1);
+  }
+
+  .verbo-dialog[open]::backdrop {
+    animation: verbo-backdrop-enter 160ms ease-out;
+  }
+
+  .verbo-dialog__success-mark {
+    animation: verbo-confirmation-enter 240ms cubic-bezier(.2, .8, .3, 1);
+  }
+
+  @keyframes verbo-dialog-enter {
+    from { opacity: .25; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes verbo-backdrop-enter {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes verbo-confirmation-enter {
+    from { opacity: .5; transform: scale(.88); }
+    65% { opacity: 1; transform: scale(1.04); }
+    to { opacity: 1; transform: scale(1); }
+  }
+}

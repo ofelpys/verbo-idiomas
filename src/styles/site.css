@@ -142,6 +142,46 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 3px soli
   .header-actions { gap: .3rem; }
   .hero h1 { font-size: 3.1rem; }
 }
+@media (prefers-reduced-motion: no-preference) {
+  .photo-mat {
+    animation: verbo-photo-settle 600ms cubic-bezier(.16, .8, .25, 1);
+  }
+  .sticker {
+    transform-origin: 50% 90%;
+    animation: verbo-greeting-pop 360ms cubic-bezier(.2, .8, .3, 1) backwards;
+  }
+  .sticker--hola { animation-delay: 140ms; }
+  .sticker--hello { animation-delay: 310ms; }
+  .photo-rays path {
+    stroke-dasharray: 1;
+    animation: verbo-rays-draw 300ms ease-out 430ms backwards;
+  }
+
+  .course-card {
+    animation: verbo-card-arrive 320ms ease-out backwards;
+  }
+  .course-card:nth-child(3n + 2) { animation-delay: 45ms; }
+  .course-card:nth-child(3n) { animation-delay: 90ms; }
+
+  @keyframes verbo-photo-settle {
+    from { translate: 0 12px; rotate: -2.4deg; }
+    to { translate: 0 0; rotate: 0deg; }
+  }
+  @keyframes verbo-greeting-pop {
+    from { opacity: 0; scale: .8; }
+    70% { opacity: 1; scale: 1.055; }
+    to { opacity: 1; scale: 1; }
+  }
+  @keyframes verbo-rays-draw {
+    from { stroke-dashoffset: 1; }
+    to { stroke-dashoffset: 0; }
+  }
+  @keyframes verbo-card-arrive {
+    from { opacity: .5; translate: 0 8px; }
+    to { opacity: 1; translate: 0 0; }
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0s !important; }
+  .button:hover, .course-card:hover { transform: none; }
 }

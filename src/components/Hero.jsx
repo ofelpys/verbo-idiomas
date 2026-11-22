@@ -33,7 +33,7 @@ export default function Hero() {
             <div className="sticker sticker--hola" aria-hidden="true" lang="es">¡Hola!</div>
             <div className="sticker sticker--hello" aria-hidden="true" lang="en">Hello!</div>
             <svg className="photo-rays" aria-hidden="true" viewBox="0 0 60 47" fill="none" stroke="currentColor" strokeWidth="4.2" strokeLinecap="round">
-              <path d="M7 28 14 7M22 31 39 9M32 41l22-9" />
+              <path pathLength="1" d="M7 28 14 7M22 31 39 9M32 41l22-9" />
             </svg>
           </div>
         </div>
