@@ -1,0 +1,177 @@
+.school-guide,
+.school-faq {
+  scroll-margin-top: 5rem;
+  padding-block: clamp(3.8rem, 7vw, 7rem);
+  color: #191b21;
+}
+
+.school-guide {
+  border-block: 1px solid #deded5;
+  background-color: #f7f6ef;
+}
+
+.guide-layout,
+.faq-layout {
+  display: grid;
+  grid-template-columns: .84fr 1.16fr;
+  align-items: start;
+  gap: clamp(2.5rem, 7vw, 8rem);
+}
+
+.guide-layout { align-items: center; }
+
+.guide-intro h2,
+.school-faq h2 {
+  margin: 0;
+  font-size: clamp(2.6rem, 4.4vw, 4.6rem);
+  font-weight: 650;
+  line-height: 1.01;
+  letter-spacing: -.065em;
+}
+
+.guide-intro .eyebrow { margin: 0 0 1.2rem; }
+.guide-intro__copy {
+  max-width: 24rem;
+  margin: 1.1rem 0 0;
+  color: #575a61;
+  line-height: 1.6;
+}
+
+.guide-lesson {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #d0d2ce;
+  border-radius: 1rem;
+  background: #fff;
+}
+
+.guide-lesson__tabs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-bottom: 1px solid #d0d2ce;
+}
+
+.guide-lesson__tabs button {
+  min-height: 3.25rem;
+  padding: .65rem .15rem;
+  border: 0;
+  border-inline-end: 1px solid #d0d2ce;
+  color: #363941;
+  background: #fafaf6;
+  font: inherit;
+  font-size: .94rem;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.guide-lesson__tabs button:last-child { border-inline-end: 0; }
+.guide-lesson__tabs button[aria-selected='true'] { background: #2248e9; color: #fff; }
+.guide-lesson__tabs button:focus-visible { outline: 2px solid #ffdb55; outline-offset: -5px; }
+.guide-lesson__tabs button:hover:not([aria-selected='true']) { background: #edeee8; }
+
+.guide-lesson__panel { padding: clamp(1.4rem, 3vw, 2.5rem); }
+.guide-lesson__panel[hidden] { display: none; }
+.guide-lesson__panel:focus-visible { outline: 2px solid #2248e9; outline-offset: -5px; }
+.guide-lesson__speaker {
+  display: table;
+  margin: 0 0 1.05rem;
+  padding: .25rem .6rem;
+  border-radius: .45rem .45rem .45rem 0;
+  color: #282715;
+  background: #ffdf72;
+  font-size: .875rem;
+  font-weight: 650;
+}
+
+.guide-lesson__phrase {
+  margin: 0;
+  color: #202128;
+  font-size: clamp(1.65rem, 3vw, 2.6rem);
+  font-weight: 650;
+  line-height: 1.07;
+  letter-spacing: -.045em;
+  text-wrap: balance;
+}
+
+.guide-lesson__translation { margin: .55rem 0 0; color: #646773; line-height: 1.5; }
+.guide-lesson__tip {
+  margin: 1.45rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e3e0;
+  color: #4d505a;
+  line-height: 1.5;
+}
+
+.guide-audio { display: flex; flex-wrap: wrap; align-items: center; gap: .45rem .8rem; margin-top: .45rem; }
+.guide-audio button {
+  display: inline-flex;
+  min-height: 2.4rem;
+  align-items: center;
+  gap: .5rem;
+  padding: .25rem .1rem;
+  border: 0;
+  color: #2248e9;
+  background: transparent;
+  font: inherit;
+  font-size: .9rem;
+  font-weight: 650;
+  cursor: pointer;
+}
+.guide-audio button:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+.guide-audio button:disabled { color: #626b89; cursor: default; }
+.guide-audio__play {
+  width: 0;
+  height: 0;
+  border-block: .3rem solid transparent;
+  border-left: .48rem solid currentColor;
+}
+.guide-audio span[role='status'] { font-size: .875rem; color: #5a5d66; }
+
+.school-faq { background: #fff; }
+.school-faq__item { border-bottom: 1px solid #dddeda; }
+.school-faq__item:first-child { border-top: 1px solid #dddeda; }
+.school-faq__item summary {
+  display: flex;
+  min-height: 4.1rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.1rem;
+  padding: 1.1rem .1rem;
+  line-height: 1.4;
+  font-size: 1.12rem;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+}
+.school-faq__item summary::-webkit-details-marker { display: none; }
+.school-faq__item summary:hover { color: #2248e9; }
+.school-faq__item summary:focus-visible { outline: 2px solid #2248e9; outline-offset: 2px; }
+.school-faq__item summary span { position: relative; flex: 0 0 1rem; height: 1rem; }
+.school-faq__item summary span::before,
+.school-faq__item summary span::after {
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0;
+  width: 1rem;
+  height: 2px;
+  background: currentColor;
+  content: '';
+}
+.school-faq__item summary span::after { transform: rotate(90deg); }
+.school-faq__item[open] summary span::after { display: none; }
+.school-faq__item p { max-width: 42rem; margin: -.15rem 1.7rem 1.4rem 0; color: #555961; line-height: 1.6; }
+
+.guide-footer { padding-block: 1.7rem; border-top: 1px solid #dcded7; background: #f7f6ef; }
+.guide-footer__row,
+.guide-footer__links { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.75rem; }
+.guide-footer__row { justify-content: space-between; }
+.guide-footer__links a { color: #35383e; font-size: .94rem; font-weight: 600; text-underline-offset: .2rem; }
+.guide-footer__links a:hover { color: #2248e9; }
+
+@media (max-width: 760px) {
+  .guide-layout,
+  .faq-layout { grid-template-columns: 1fr; gap: 1.9rem; }
+  .guide-intro h2 br,
+  .school-faq h2 br { display: none; }
+  .guide-intro__copy { max-width: 35rem; }
+}

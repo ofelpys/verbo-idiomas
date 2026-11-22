@@ -1,0 +1,23 @@
+{
+  "name": "verbo-idiomas",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Escola de idiomas fictícia com cursos e agendamento de aula experimental.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@fontsource-variable/dm-sans": "^5.2.0",
+    "@fontsource/space-mono": "^5.2.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "vite": "^7.2.0"
+  },
+  "engines": { "node": ">=22.12.0" }
+}

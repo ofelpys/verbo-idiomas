@@ -1,0 +1,7 @@
+# Fotografia da Verbo
+
+O ImageGen gerou a fotografia principal a partir do prompt abaixo. A versão usada no site foi otimizada em WebP. [Abrir fotografia](../public/images/conversa.webp).
+
+## Prompt de geração
+
+Use case: photorealistic-natural. Create the hero photograph, landscape 4:3, for Verbo, a design-led Brazilian language school. A spontaneous joyful moment: two young adult friends and language students sitting together and talking at a sunny European sidewalk café. A woman with short tousled chestnut bob hair and a vivid cobalt-blue open cotton overshirt over a simple ivory top in the left foreground is turned to the man at right. He has warm brown skin, short dark curls, and a terracotta orange t-shirt, visibly engaged and smiling in side three-quarter view. A small round table with an espresso and a folded notebook. Beautifully art-directed film editorial, shot on a 35mm lens, warm natural sunshine, pleasing tones, tactile clothing, subtle analog grain, intimate framing from mid-torso, realistically imperfect candid smiles. Cream plaster architecture, softly blurred olive-green shutter in the background. Keep both heads in the central 65% of the frame for responsive crops, comfortably within frame, not sliced at top. No words, watermarks, logos, designed graphics or overlaid elements, no foreground visual clutter, no exaggerated expressions. This is one realistic photograph; not a website mockup.
